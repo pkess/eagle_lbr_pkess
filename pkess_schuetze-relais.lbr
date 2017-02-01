@@ -47,7 +47,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -579,6 +579,33 @@
 <connect gate="G$3" pin="2" pad="32"/>
 <connect gate="SPULE" pin="A1" pad="A1"/>
 <connect gate="SPULE" pin="A2" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHUETZ_3P" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SCHUETZ_3P" x="10.16" y="5.08"/>
+<gate name="G$2" symbol="SPULE" x="-12.7" y="5.08" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="GENERIC_SCHUETZ_4P">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$2" pin="A1" pad="A1"/>
+<connect gate="G$2" pin="A2" pad="A2"/>
 </connects>
 <technologies>
 <technology name="">

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="L1L2L3NPE">
+<pad name="L1" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="L2" x="2.54" y="0" drill="0.8" shape="square"/>
+<pad name="L3" x="5.08" y="0" drill="0.8" shape="square"/>
+<pad name="N" x="7.62" y="0" drill="0.8" shape="square"/>
+<pad name="PE" x="10.16" y="0" drill="0.8" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHUKO_BU">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="-2.54" y1="-5.207" x2="12.7" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="12.7" y1="-5.207" x2="12.7" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="12.7" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="1.27" y1="-3.937" x2="0" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-2.667" x2="-1.27" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="10.16" y1="-1.778" x2="10.16" y2="-2.413" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.127" x2="0" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="5.08" y1="-0.127" x2="5.08" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="6.35" y1="-3.937" x2="5.08" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="5.08" y1="-2.667" x2="3.81" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="10.16" y1="-0.254" x2="10.16" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="9.652" y1="-0.889" x2="10.668" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="9.779" y1="-1.143" x2="10.541" y2="-1.143" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="9.906" y1="-1.397" x2="10.414" y2="-1.397" width="0.1524" layer="94" style="dashdot"/>
+<circle x="10.16" y="-0.889" radius="0.889" width="0.1524" layer="94"/>
+<text x="-1.27" y="-6.35" size="1.778" layer="95" font="vector" align="top-left">&gt;PART</text>
+<rectangle x1="9.779" y1="-3.937" x2="10.541" y2="-2.286" layer="94"/>
+<pin name="L1" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="N" x="5.08" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="PE" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-1.27" y="-8.89" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.27" y="-16.51" size="1.778" layer="96" font="vector" align="top-left">&gt;FUNKTION</text>
+<text x="-1.27" y="-11.43" size="1.778" layer="96" font="vector" align="top-left">&gt;TYPE</text>
+<text x="-1.27" y="-13.97" size="1.778" layer="96" font="vector" align="top-left">&gt;HERSTELLER</text>
+</symbol>
+<symbol name="CEE_BU_L1L2L3NPE">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="-2.54" y1="-5.207" x2="22.86" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="22.86" y1="-5.207" x2="22.86" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="22.86" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="1.27" y1="-3.937" x2="0" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-2.667" x2="-1.27" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="20.32" y1="-1.778" x2="20.32" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.127" x2="0" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="15.24" y1="-0.127" x2="15.24" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="16.51" y1="-3.937" x2="15.24" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="15.24" y1="-2.667" x2="13.97" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="20.32" y1="-0.254" x2="20.32" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="19.812" y1="-0.889" x2="20.828" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="19.939" y1="-1.143" x2="20.701" y2="-1.143" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="20.066" y1="-1.397" x2="20.574" y2="-1.397" width="0.1524" layer="94" style="dashdot"/>
+<circle x="20.32" y="-0.889" radius="0.889" width="0.1524" layer="94"/>
+<text x="-1.27" y="-6.35" size="1.778" layer="95" font="vector" align="top-left">&gt;PART</text>
+<pin name="L1" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="N" x="15.24" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="PE" x="20.32" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-1.27" y="-8.89" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.27" y="-16.51" size="1.778" layer="96" font="vector" align="top-left">&gt;FUNKTION</text>
+<text x="-1.27" y="-11.43" size="1.778" layer="96" font="vector" align="top-left">&gt;TYPE</text>
+<text x="-1.27" y="-13.97" size="1.778" layer="96" font="vector" align="top-left">&gt;HERSTELLER</text>
+<pin name="L2" x="5.08" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="L3" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="5.08" y1="-0.127" x2="5.08" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="10.16" y1="-0.127" x2="10.16" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="6.35" y1="-3.937" x2="5.08" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="11.43" y1="-3.937" x2="10.16" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="5.08" y1="-2.667" x2="3.81" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="10.16" y1="-2.667" x2="8.89" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="21.59" y1="-3.937" x2="20.32" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="20.32" y1="-2.667" x2="19.05" y2="-3.937" width="0.254" layer="94" curve="90"/>
+</symbol>
+<symbol name="CEE_BU_L1L2L3PE">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="-2.54" y1="-5.207" x2="17.78" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="17.78" y1="-5.207" x2="17.78" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="17.78" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="1.27" y1="-3.937" x2="0" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-2.667" x2="-1.27" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-0.127" x2="0" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="15.24" y1="-0.254" x2="15.24" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="14.732" y1="-0.889" x2="15.748" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="14.859" y1="-1.143" x2="15.621" y2="-1.143" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="14.986" y1="-1.397" x2="15.494" y2="-1.397" width="0.1524" layer="94" style="dashdot"/>
+<circle x="15.24" y="-0.889" radius="0.889" width="0.1524" layer="94"/>
+<text x="-1.27" y="-6.35" size="1.778" layer="95" font="vector" align="top-left">&gt;PART</text>
+<pin name="L1" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="PE" x="15.24" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-1.27" y="-8.89" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.27" y="-16.51" size="1.778" layer="96" font="vector" align="top-left">&gt;FUNKTION</text>
+<text x="-1.27" y="-11.43" size="1.778" layer="96" font="vector" align="top-left">&gt;TYPE</text>
+<text x="-1.27" y="-13.97" size="1.778" layer="96" font="vector" align="top-left">&gt;HERSTELLER</text>
+<pin name="L2" x="5.08" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="L3" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="5.08" y1="-0.127" x2="5.08" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="10.16" y1="-0.127" x2="10.16" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="6.35" y1="-3.937" x2="5.08" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="11.43" y1="-3.937" x2="10.16" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="5.08" y1="-2.667" x2="3.81" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="10.16" y1="-2.667" x2="8.89" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<wire x1="15.24" y1="-1.778" x2="15.24" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="16.51" y1="-3.937" x2="15.24" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="15.24" y1="-2.667" x2="13.97" y2="-3.937" width="0.254" layer="94" curve="90"/>
+</symbol>
+<symbol name="CEE_ST_L1L2L3NPE">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="-2.54" y1="-5.207" x2="22.86" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="22.86" y1="-5.207" x2="22.86" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="22.86" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="20.32" y1="-1.778" x2="20.32" y2="-2.413" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.127" x2="0" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="15.24" y1="-0.127" x2="15.24" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="20.32" y1="-0.254" x2="20.32" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="19.812" y1="-0.889" x2="20.828" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="19.939" y1="-1.143" x2="20.701" y2="-1.143" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="20.066" y1="-1.397" x2="20.574" y2="-1.397" width="0.1524" layer="94" style="dashdot"/>
+<circle x="20.32" y="-0.889" radius="0.889" width="0.1524" layer="94"/>
+<text x="-1.27" y="-6.35" size="1.778" layer="95" font="vector" align="top-left">&gt;PART</text>
+<rectangle x1="19.939" y1="-3.937" x2="20.701" y2="-2.286" layer="94"/>
+<pin name="L1" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="N" x="15.24" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="PE" x="20.32" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-1.27" y="-8.89" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.27" y="-16.51" size="1.778" layer="96" font="vector" align="top-left">&gt;FUNKTION</text>
+<text x="-1.27" y="-11.43" size="1.778" layer="96" font="vector" align="top-left">&gt;TYPE</text>
+<text x="-1.27" y="-13.97" size="1.778" layer="96" font="vector" align="top-left">&gt;HERSTELLER</text>
+<pin name="L2" x="5.08" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="L3" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="5.08" y1="-0.127" x2="5.08" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="10.16" y1="-0.127" x2="10.16" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<rectangle x1="14.859" y1="-3.937" x2="15.621" y2="-2.286" layer="94"/>
+<rectangle x1="9.779" y1="-3.937" x2="10.541" y2="-2.286" layer="94"/>
+<rectangle x1="4.699" y1="-3.937" x2="5.461" y2="-2.286" layer="94"/>
+<rectangle x1="-0.381" y1="-3.937" x2="0.381" y2="-2.286" layer="94"/>
+</symbol>
+<symbol name="CEE_ST_L1L2L3PE">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="-2.54" y1="-5.207" x2="17.78" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="17.78" y1="-5.207" x2="17.78" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="17.78" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="15.24" y1="-1.778" x2="15.24" y2="-2.413" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.127" x2="0" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="15.24" y1="-0.254" x2="15.24" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="14.732" y1="-0.889" x2="15.748" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="14.859" y1="-1.143" x2="15.621" y2="-1.143" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="14.986" y1="-1.397" x2="15.494" y2="-1.397" width="0.1524" layer="94" style="dashdot"/>
+<circle x="15.24" y="-0.889" radius="0.889" width="0.1524" layer="94"/>
+<text x="-1.27" y="-6.35" size="1.778" layer="95" font="vector" align="top-left">&gt;PART</text>
+<rectangle x1="14.859" y1="-3.937" x2="15.621" y2="-2.286" layer="94"/>
+<pin name="L1" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="PE" x="15.24" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-1.27" y="-8.89" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.27" y="-16.51" size="1.778" layer="96" font="vector" align="top-left">&gt;FUNKTION</text>
+<text x="-1.27" y="-11.43" size="1.778" layer="96" font="vector" align="top-left">&gt;TYPE</text>
+<text x="-1.27" y="-13.97" size="1.778" layer="96" font="vector" align="top-left">&gt;HERSTELLER</text>
+<pin name="L2" x="5.08" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="L3" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="5.08" y1="-0.127" x2="5.08" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="10.16" y1="-0.127" x2="10.16" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<rectangle x1="9.779" y1="-3.937" x2="10.541" y2="-2.286" layer="94"/>
+<rectangle x1="4.699" y1="-3.937" x2="5.461" y2="-2.286" layer="94"/>
+<rectangle x1="-0.381" y1="-3.937" x2="0.381" y2="-2.286" layer="94"/>
+</symbol>
+<symbol name="SCHUKO_ST">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="-2.54" y1="-5.207" x2="12.7" y2="-5.207" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="12.7" y1="-5.207" x2="12.7" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="12.7" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="10.16" y1="-1.778" x2="10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.127" x2="0" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="5.08" y1="-0.127" x2="5.08" y2="-2.667" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="10.16" y1="-0.254" x2="10.16" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="9.652" y1="-0.889" x2="10.668" y2="-0.889" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="9.779" y1="-1.143" x2="10.541" y2="-1.143" width="0.1524" layer="94" style="dashdot"/>
+<wire x1="9.906" y1="-1.397" x2="10.414" y2="-1.397" width="0.1524" layer="94" style="dashdot"/>
+<circle x="10.16" y="-0.889" radius="0.889" width="0.1524" layer="94"/>
+<text x="-1.27" y="-6.35" size="1.778" layer="95" font="vector" align="top-left">&gt;PART</text>
+<pin name="L1" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="N" x="5.08" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="PE" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-1.27" y="-8.89" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.27" y="-16.51" size="1.778" layer="96" font="vector" align="top-left">&gt;FUNKTION</text>
+<text x="-1.27" y="-11.43" size="1.778" layer="96" font="vector" align="top-left">&gt;TYPE</text>
+<text x="-1.27" y="-13.97" size="1.778" layer="96" font="vector" align="top-left">&gt;HERSTELLER</text>
+<rectangle x1="4.699" y1="-3.937" x2="5.461" y2="-2.286" layer="94"/>
+<wire x1="11.43" y1="-3.937" x2="10.16" y2="-2.667" width="0.254" layer="94" curve="90"/>
+<wire x1="10.16" y1="-2.667" x2="8.89" y2="-3.937" width="0.254" layer="94" curve="90"/>
+<rectangle x1="-0.381" y1="-3.937" x2="0.381" y2="-2.286" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SCHUKO_BU" prefix="X" uservalue="yes">
+<description>Schuko Buchse
+
+&lt;ul&gt;
+&lt;li&gt;Steckdose&lt;/li&gt;
+&lt;li&gt;Kupplung&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCHUKO_BU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L1L2L3NPE">
+<connects>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="N" pad="N"/>
+<connect gate="G$1" pin="PE" pad="PE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CEE_BU_L1L2L3PE" prefix="X" uservalue="yes">
+<description>CEE Buchse 4pol (L1, L2, L3, PE) 
+
+&lt;ul&gt;
+&lt;li&gt;Steckdose&lt;/li&gt;
+&lt;li&gt;Kupplung&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CEE_BU_L1L2L3PE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L1L2L3NPE">
+<connects>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="L2" pad="L2"/>
+<connect gate="G$1" pin="L3" pad="L3"/>
+<connect gate="G$1" pin="PE" pad="PE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CEE_BU_L1L2L3NPE" prefix="X" uservalue="yes">
+<description>CEE Buchse 5pol (L1, L2, L3, N, PE) 
+
+&lt;ul&gt;
+&lt;li&gt;Steckdose&lt;/li&gt;
+&lt;li&gt;Kupplung&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CEE_BU_L1L2L3NPE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L1L2L3NPE">
+<connects>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="L2" pad="L2"/>
+<connect gate="G$1" pin="L3" pad="L3"/>
+<connect gate="G$1" pin="N" pad="N"/>
+<connect gate="G$1" pin="PE" pad="PE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHUKO_ST" prefix="X" uservalue="yes">
+<description>Schuko Stecker</description>
+<gates>
+<gate name="G$1" symbol="SCHUKO_ST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L1L2L3NPE">
+<connects>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="N" pad="N"/>
+<connect gate="G$1" pin="PE" pad="PE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CEE_ST_L1L2L3NPE" prefix="X" uservalue="yes">
+<description>CEE Stecker 5pol (L1, L2, L3, N, PE)</description>
+<gates>
+<gate name="G$1" symbol="CEE_ST_L1L2L3NPE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L1L2L3NPE">
+<connects>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="L2" pad="L2"/>
+<connect gate="G$1" pin="L3" pad="L3"/>
+<connect gate="G$1" pin="N" pad="N"/>
+<connect gate="G$1" pin="PE" pad="PE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CEE_ST_L1L2L3PE" prefix="X" uservalue="yes">
+<description>CEE Stecker 4pol (L1, L2, L3, PE)</description>
+<gates>
+<gate name="G$1" symbol="CEE_ST_L1L2L3PE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L1L2L3NPE">
+<connects>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="L2" pad="L2"/>
+<connect gate="G$1" pin="L3" pad="L3"/>
+<connect gate="G$1" pin="PE" pad="PE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

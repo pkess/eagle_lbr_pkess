@@ -154,6 +154,25 @@ z.B. Not-Aus Schalter</description>
 <pin name="1" x="0" y="5.08" visible="pad" length="short" direction="in" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="in" rot="R90"/>
 </symbol>
+<symbol name="SCHALT_DRUCK_S">
+<wire x1="-4.9164" y1="1.2193" x2="-3.6972" y2="1.2193" width="0.1524" layer="94"/>
+<wire x1="-4.9164" y1="-1.2191" x2="-3.6972" y2="-1.2191" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
+<text x="-3.81" y="3.81" size="1.778" layer="95" font="vector" rot="R180">&gt;PART</text>
+<text x="-3.81" y="-2.54" size="1.778" layer="96" font="vector" rot="R180">&gt;VALUE</text>
+<text x="-3.81" y="-10.16" size="1.778" layer="96" font="vector" rot="R180">&gt;FUNKTION</text>
+<text x="-3.81" y="-5.08" size="1.778" layer="96" font="vector" rot="R180">&gt;TYPE</text>
+<text x="-3.81" y="-7.62" size="1.778" layer="96" font="vector" rot="R180">&gt;HERSTELLER</text>
+<pin name="4" x="0" y="-5.08" visible="pad" length="short" direction="in" rot="R90"/>
+<pin name="3" x="0" y="5.08" visible="pad" length="short" direction="in" rot="R270"/>
+<wire x1="-4.9164" y1="1.2192" x2="-4.9164" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.9164" y1="0" x2="-4.9164" y2="-1.2192" width="0.1524" layer="94"/>
+<wire x1="-3.2908" y1="0" x2="-2.478" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.478" y1="-1.016" x2="-1.665" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.665" y1="0" x2="-0.8524" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.9164" y1="0" x2="-3.2908" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="1.524" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TAST_DRUCK_O" prefix="S" uservalue="yes">
@@ -253,6 +272,27 @@ z.B. Eaton: M22-DDL-GR</description>
 <connect gate="G$1" pin="2" pad="12"/>
 <connect gate="G$2" pin="1" pad="21"/>
 <connect gate="G$2" pin="2" pad="22"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNKTION" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHALT_DRUCK_S" prefix="S" uservalue="yes">
+<description>Druckschalter, Schliesser</description>
+<gates>
+<gate name="G$1" symbol="SCHALT_DRUCK_S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KONTAKTE_S">
+<connects>
+<connect gate="G$1" pin="3" pad="13"/>
+<connect gate="G$1" pin="4" pad="14"/>
 </connects>
 <technologies>
 <technology name="">
